@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    text-align: center;
+	background-image: url('../images/fundo.jpg');
+	background-size: 150px 150px;
+	background-repeat:repeat;
+}
+
+#texto{
+min-width:780px;
+vertical-align:top;
+margin:auto;
+margin-top:85px;
+width:960px;
+height: auto;
+display:block;
+border:15px solid #24096B;
+background-color:white;
+}
+#texto img{
+height:325px;
+width:325px;
+}
+#texto p{
+text-indent: 50px;
+font-family:"Ascender Sans Narrow", Ascender, sans-serif;
+padding:3px;
+margin:10px;
+font-size:18px;
+font-weight:100;
+}
+#texto h1{
+font-family:"Ascender Sans Narrow", Ascender, sans-serif;
+margin-left:60px;
+color:#24096B;
+font-style:italic;
+font-size:40px;
+padding:0px
+}
+#rodape{
+float:bottom;
+height:85px;
+background-color:#FDFF37;
+padding:0px;
+margin-top:80px;
+}

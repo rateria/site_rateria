@@ -1,0 +1,40 @@
+#rodape{
+float:bottom;
+height:85px;
+background-color:#FDFF37;
+padding:0px;
+margin-top:80px;
+}
+#conta{
+margin:auto;
+background-color: white;
+min-width:780px;
+margin-top:85px;
+width:900px;
+height: 450px;;
+border:15px solid #24096B;
+vertical-align:middle;
+}
+#conta img{
+margin:15px;
+
+}
+
+#conta p{
+font-size:20px;
+font-style: bold;
+font-family:"Ascender Sans Narrow", Ascender, sans-serif;
+margin:0;
+
+}
+#conta span{
+margin:0;
+font-size:25px;
+color:#24096B;
+}
+body{
+margin:0;
+	background-image: url('../images/fundo.jpg');
+	background-size: 150px 150px;
+	background-repeat:repeat;
+}

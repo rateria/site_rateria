@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+		background-image: url('../images/fundo.jpg');
+	background-size: 150px 150px;
+	background-repeat:repeat;
+}
+#banner img{
+min-width:780px;
+width:100%;
+height:200px;
+}
+#compete{
+background-color: white;
+min-width:780px;
+margin-top:-15px;
+margin-left:13%;
+margin-right:13%;
+height: auto;
+display:block;
+border:15px solid #24096B;
+}
+.video{
+text-align: center;
+margin:10px;
+}
+#compete iframe{
+height: 480px;
+width:855px;
+margin:auto;
+}
+#compete h1{
+font-family:"Ascender Sans Narrow", Ascender, sans-serif;
+color:#24096B;
+font-style: italic;
+font-style: bold;
+margin-left: 15px;
+}
+#compete p{
+text-indent: 50px;
+font-family:"Ascender Sans Narrow", Ascender, sans-serif;
+margin:20px;
+font-size:18px;
+font-weight:100;
+}
+#rodape{
+float:bottom;
+height:85px;
+background-color:#FDFF37;
+padding:0px;
+margin-top:80px;
+}
+#interbatuc{
+display: none;
+}
+#compete img{
+height: 150px;
+width: 150px;
+vertical-align: top;
+display: inline-block;
+margin-left:20%;
+
+}

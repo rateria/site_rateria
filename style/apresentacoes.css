@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    text-align: center;
+		background-image: url('../images/fundo.jpg');
+	background-size: 150px 150px;
+	background-repeat:repeat;
+}
+#banner img{
+min-width:780px;
+width:100%;
+height:200px;
+}
+#apresenta{
+background-color: white;
+min-width:780px;
+margin:auto;
+margin-top:-15px;
+width:960px;
+height: auto;
+display:block;
+border:15px solid #24096B;
+}
+#exemplos{
+width:100%;
+padding:10px;
+text-align:center;
+}
+#exemplos td{
+width:33%;
+}
+#exemplos img{
+border-radius:74px;
+}
+#exemplos h2{
+font-size:26px;
+color:#42C5C4;
+}
+#apresenta p{
+text-indent: 50px;
+font-family:"Ascender Sans Narrow", Ascender, sans-serif;
+padding:3px;
+margin:15px;
+font-size:18px;
+font-weight:100;
+}
+#texto{
+text-align:left;
+}
+#mini{
+	width:800px;
+}
+#mini ul{
+	list-style-type: none;
+	}
+#mini li{
+	margin:5px;
+	text-align:center;
+	display: inline;
+	float:left;
+	height:80px;
+	list-style:none;
+	text-align:center;
+	width:100px;
+}
+
+#mini img {
+	height: 80px;
+	width: 100px;
+	opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+#mini img:hover {
+	cursor:pointer;
+	opacity: 1; 
+	-webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+#grande{
+	margin: auto;
+	margin-bottom:15px;
+}
+#grande img {
+	position:relative;
+	left:0;
+	max-height:600px;
+	max-width: 800px;
+	-webkit-transition: src .5s ease-in-out;
+	-moz-transition: src .5s ease-in-out;
+	-o-transition: src .5s ease-in-out;
+	-ms-transition: src .5s ease-in-out;
+	transition: src .5s ease-in-out;
+}
+#grande area{
+	cursor: pointer;
+	display:block;
+}
+
+
+
+#rodape{
+float:bottom;
+height:85px;
+background-color:#FDFF37;
+padding:0px;
+margin-top:80px;
+}
+
+
+	
+
