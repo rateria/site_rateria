@@ -1,0 +1,48 @@
+body{
+margin:0;
+	background-image: url('../images/fundo.jpg');
+	background-size: 150px 150px;
+	background-repeat:repeat;
+}
+#rodape{
+float:bottom;
+height:85px;
+background-color:#FDFF37;
+padding:0px;
+margin-top:80px;
+}
+#caixa{
+background-color: white;
+min-width:780px;
+margin-top:85px;
+margin-left:13%;
+margin-right:13%;
+height: auto;
+display:inline block;
+border:15px solid #24096B;
+}
+#caixa img{
+float: right;
+margin: 20px;
+}
+#caixa h1{
+margin:25px;
+font-size: 30px;
+font-family:"Ascender Sans Narrow", Ascender, sans-serif;
+color:#24096B;
+}
+#caixa  form{
+margin: 50px;
+font-family:"Ascender Sans Narrow", Ascender, sans-serif;
+color:#24096B;
+font-weight: bold;
+}
+#enviar{
+ float:right;
+ background-color: black;
+ border: none;
+ height: 30px;
+ width: 60px;
+ color: white;
+ cursor:pointer;
+}
