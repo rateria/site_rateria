@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #041E7A;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 650px;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    color: white;
+}
+.coluna{
+    flex: 1;
+    margin: 10px 90px;
+    font-family: Carrois Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21.46px;
+    color: #FFF9C0;
+    margin-top: 15px;      
+}
+hr{
+    position: relative;
+    top: 28px;
+    width: auto;
+    height: 13px;
+    background-color: #FFC90B;
+    ;
+}
+#lista{
+    list-style-type: square;
+    text-align: left;
+}
+.titulo-coluna{
+    font-family: Staatliches;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+a{
+    font-family: Carrois Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21,46px;
+    text-decoration: none;
+    color: #FFF9C0
+}
+
+#lista:hover{
+    color: black;
+}
