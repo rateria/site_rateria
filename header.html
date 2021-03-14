@@ -1,30 +1,63 @@
 <style type="text/css">
+    /*
+    rgb(4, 30, 122);
+    rgb(255, 235, 183);
+    */
     #h {
-        background-color: #041E7A;
+        background-color: rgb(4, 30, 122);
+        height: 180px;
         margin: 0px;
         padding: 0px;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+    }
+    #title {
+        text-align: left;
+        display: none;
+    }
+    .scroll > #title {
+        text-align: left;
+        display: initial;
     }
     #nav {
+        align-items: center;
+        display: inline-grid;
+        font-family: 'Staatliches', cursive;
+        font-size: 25px;
+        grid-column-gap: 20px;
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr;
         list-style-type: none;
-        display: grid;
-        grid-column-gap: 50px;
-        justify-content: center;
-        grid-template-columns: 100px 10px 10px 10px 10px;
-        font-variant: small-caps;
+        margin-top: 0px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 90%;
     }
-    #nav > li > a {
-        color: #FFE605;
+    #nav > li, #nav > li > a {
+        color: rgb(255, 230, 5);
         text-decoration: none;
-        border: 1px dashed #FFE605;
+    }
+    #nav > li > a:hover {
+        color: rgb(255, 255, 255);
+    }
+    #logo {
+        width: 250px;
     }
 </style>
-<div id="h" style="border: 1px solid black">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<div id="h" onscroll="addScroll(this)">
     <ul id="nav">
-        <li><a href="">Página Inícial</a></li>
+        <img id="logo" src="images/logo-fundo-azul.svg"/>
+        <li><h1 id="title">RATERIA</h1></li>
+        <li><a href="">Página Inicial</a></li>
         <li><a href="">Quem somos</a></li>
         <li><a href="">apresentações</a></li>
         <li><a href="">Nossos serviços</a></li>
         <li><a href="">Fale conosco</a></li>
-        <li><a href="">Fale conosco</a></li>
     </ul>
 </div>
+<script type="text/javascript">
+    function addScroll(element) {
+        element.addClass(".scroll")
+    }
+</script>
