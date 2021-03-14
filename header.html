@@ -1,8 +1,4 @@
 <style type="text/css">
-    /*
-    rgb(4, 30, 122);
-    rgb(255, 235, 183);
-    */
     #h {
         background-color: rgb(4, 30, 122);
         height: 180px;
@@ -16,22 +12,21 @@
         text-align: left;
         display: none;
     }
-    .scroll > #title {
-        text-align: left;
-        display: initial;
-    }
     #nav {
         align-items: center;
         display: inline-grid;
         font-family: 'Staatliches', cursive;
         font-size: 25px;
         grid-column-gap: 20px;
-        grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr 1fr 1fr;
         list-style-type: none;
-        margin-top: 0px;
+        margin: 0px auto;
         text-align: center;
         text-transform: uppercase;
-        width: 90%;
+        width: 98%;
+    }
+    #logo {
+        width: 250px;
     }
     #nav > li, #nav > li > a {
         color: rgb(255, 230, 5);
@@ -40,24 +35,43 @@
     #nav > li > a:hover {
         color: rgb(255, 255, 255);
     }
-    #logo {
-        width: 250px;
+    #h-content {
+        width: 80%;
+        margin: auto;
+    }
+    #h.scrolled {
+        height: 100px;
+    }
+    .scrolled #title {
+        display: initial;
+    }
+    .scrolled #logo {
+        width: 100px;
+    }
+    .scrolled #nav {
+        grid-template-columns: 0.5fr 2.5fr 1fr 1fr 1fr 1fr 1fr;
     }
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-<div id="h" onscroll="addScroll(this)">
-    <ul id="nav">
-        <img id="logo" src="images/logo-fundo-azul.svg"/>
-        <li><h1 id="title">RATERIA</h1></li>
-        <li><a href="">Página Inicial</a></li>
-        <li><a href="">Quem somos</a></li>
-        <li><a href="">apresentações</a></li>
-        <li><a href="">Nossos serviços</a></li>
-        <li><a href="">Fale conosco</a></li>
-    </ul>
+<div id="h">
+    <div id="h-content">
+        <ul id="nav">
+            <img id="logo" src="images/logo-fundo-azul.svg"/>
+            <li><h1 id="title">RATERIA</h1></li>
+            <li><a href="">Página Inicial</a></li>
+            <li><a href="">Quem somos</a></li>
+            <li><a href="">apresentações</a></li>
+            <li><a href="">Nossos serviços</a></li>
+            <li><a href="">Fale conosco</a></li>
+        </ul>
+    </div>
 </div>
 <script type="text/javascript">
-    function addScroll(element) {
-        element.addClass(".scroll")
+    window.onscroll = function() {
+        var winScroll = document.documentElement.scrollTop;
+        if (winScroll != 0)
+            $("#h").addClass("scrolled");
+        else
+            $("#h").removeClass("scrolled");
     }
 </script>
