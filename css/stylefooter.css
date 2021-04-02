@@ -40,8 +40,10 @@ hr{
     ;
 }
 #lista{
-    list-style-type: square;
+    list-style-type: none;
     text-align: left;
+    line-height: normal;
+    text-indent: -10px;
 }
 .titulo-coluna{
     font-family: Staatliches;
@@ -58,10 +60,18 @@ a{
     color: #FFF9C0
 }
 
-#lista>a:hover{
+a:hover{
     color: #FFC90B;
 }
-/* Tasks: deixar branco quando passa o mouse pelos links
-Deixar responsivo usando a feature do chrome - https://www.youtube.com/watch?v=CaNqFe9amRA
-Testar com o logo em cima
-Colocar os ícones de cada rede social nos contatos*/
+
+
+@media screen and (max-width: 500px){
+    #container {
+        flex-direction: column;
+    }
+}
+/* Tasks:
+Deixar responsivo usando a feature do chrome - https://www.youtube.com/watch?v=CaNqFe9amRA / https://www.w3schools.com/css/css3_flexbox_responsive.asp
+Testar com o logo da rateria em cima
+Endereço clicável levando para o google maps (Check)
+Colocar os ícones de cada rede social nos contatos - https://fontawesome.com/icons?d=gallery&p=2 / https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use (Check)*/
