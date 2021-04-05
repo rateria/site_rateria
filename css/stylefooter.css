@@ -10,26 +10,7 @@ footer{
     width: auto;
     height: auto;
     position: absolute;
-    top: 650px;
-}
-#container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: auto;
-    color: white;
-}
-.coluna{
-    flex: 1;
-    margin: 10px 90px;
-    font-family: Carrois Gothic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21.46px;
-    color: #FFF9C0;
-    margin-top: 15px;      
+    bottom: 0px;
 }
 hr{
     position: relative;
@@ -37,7 +18,25 @@ hr{
     width: auto;
     height: 13px;
     background-color: #FFC90B;
-    ;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+}
+.coluna{
+    flex: 1;
+    margin: 33px 90px 10px 90px;
+    font-family: Carrois Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21.46px;
+    color: #FFF9C0;
+    /* background-color: aquamarine;     */
 }
 #lista{
     list-style-type: none;
@@ -59,19 +58,55 @@ a{
     text-decoration: none;
     color: #FFF9C0
 }
-
 a:hover{
     color: #FFC90B;
 }
 
+@media screen and (max-width: 1500px){
+    #container .coluna{
+        margin: 33px 0px 10px 90px;
+    }
+    #container .coluna:nth-child(2){
+        margin: 33px 23px 10px 45px;
+    }
+    #container .coluna:last-child{
+        margin: 33px 90px 10px 22px;
+    }
+}
 
-@media screen and (max-width: 500px){
-    #container {
-        flex-direction: column;
+@media screen and (max-width: 1000px){
+    #container .coluna{
+        margin: 33px 30px 5px 90px;
+    }
+    #container .coluna:nth-child(2){
+        margin: 33px 90px 5px 30px;
+    }
+    #container .coluna:last-child{
+        flex-basis: 100%;
+        margin: 5px 90px 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #container .coluna{
+        margin: 33px 90px 5px 90px;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    #container .coluna:nth-child(2){
+        margin: 5px 90px 5px 90px;
+        flex-basis: 100%;
+    }
+    #container .coluna:last-child{
+        margin: 5px 90px 10px;
+        flex-basis: 100%;
+    }
+    #lista{
+        text-align: center;
+        text-indent: -20px;
     }
 }
 /* Tasks:
 Deixar responsivo usando a feature do chrome - https://www.youtube.com/watch?v=CaNqFe9amRA / https://www.w3schools.com/css/css3_flexbox_responsive.asp
-Testar com o logo da rateria em cima
-Endereço clicável levando para o google maps (Check)
-Colocar os ícones de cada rede social nos contatos - https://fontawesome.com/icons?d=gallery&p=2 / https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use (Check)*/
+Testar com o logo da rateria em cima (Horrível, tirei)
+Consertei bug de fonte nos contatos (Check)*/
