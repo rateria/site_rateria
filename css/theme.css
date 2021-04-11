@@ -4,7 +4,11 @@
 
     --color-primary: #041E7A;
     --color-primary-light: #8BB9DB;
+    --color-primary-transparent: #041E7AE0;
 
     --color-black: #000000;
-    --color-white: #ffffff;
+    --color-white: #FFFFFF;
+    --color-nav: #FFE605;
+
+    --font-family-nav: 'Staatliches', cursive;
 }

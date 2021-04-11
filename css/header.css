@@ -1,17 +1,19 @@
+@import "theme.css";
+
 #h {
-    background-color: rgb(4, 30, 122);
+    background-color: var(--color-primary);
     height: 180px;
     margin: 0px;
     padding: 0px;
     position: fixed;
-    width: 100%;
     top: 0px;
+    width: 100%;
 }
 #h-content {
     align-items: center;
-    color: rgb(255, 230, 5);
+    color: var(--color-nav);
     display: inline-grid;
-    font-family: 'Staatliches', cursive;
+    font-family: var(--font-family-nav);
     grid-column-gap: 10px;
     grid-template-columns: auto auto;
     margin: 0px auto;
@@ -41,7 +43,7 @@
     width: 100%;
 }
 #nav-button {
-    background-color:rgb(4, 30, 122);
+    background-color: var(--color-primary);
     background-image: url("/images/nav_menu.png");
     cursor: pointer;
     display: none;
@@ -49,11 +51,11 @@
     width: 60px;
 }
 #nav > a {
-    color: rgb(255, 230, 5);
+    color: var(--color-nav);
     text-decoration: none;
 }
 #nav > a:hover {
-    color: rgb(255, 255, 255);
+    color: var(--color-white);
 }
 
 #h.scrolled {
@@ -78,28 +80,25 @@
         width: 100%;
     }
     #nav {
-        margin: 0px 0px;
-        padding-left: 0px 0px;
+        background-color: var(--color-primary-transparent);
         display: inline-block;
-        text-transform: uppercase;
-        width: 100%;
-        top: 180px;
         left: 0px;
-        position: absolute;
-        background-color: rgb(4, 30, 122, 0.9);
+        margin: 0px 0px;
         padding: 0px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 180px;
+        width: 100%;
     }
     #nav li {
         display: none;
     }
     #nav.toggled li {
         display: block;
-        font-size: 60px;
-        height: 100px;
-        padding-top: 20px;
+        font-size: 50px;
     }
     #nav li:hover {
-        background-color: rgb(4, 30, 122);
+        background-color: var(--color-primary);
     }
     #h-title {
         text-align: left;
