@@ -37,20 +37,30 @@ window.onscroll = function() {
       $("#h").removeClass("scrolled");
 }
 
+function toggleNavMenu() {
+  const nav = document.getElementById("nav");
+  nav.classList.contains('toggled')
+  if (nav.classList.contains('toggled'))
+    nav.classList.remove("toggled");
+  else
+    nav.classList.add("toggled");
+}
+
 function buildHeader() {
   return (
     '<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"/>' +
     '<link rel="stylesheet" type="text/css" href="/css/header.css"/>' +
     '<div id="h">' +
       '<div id="h-content">' +
+          '<img id="logo" src="/images/logo-fundo-azul.svg"/>' +
+          '<h1 id="h-title">RATERIA</h1>' +
+          '<div id="nav-button" onclick="toggleNavMenu()"></div>' +
           '<ul id="nav">' +
-              '<img id="logo" src="/images/logo-fundo-azul.svg"/>' +
-              '<li><h1 id="h-title">RATERIA</h1></li>' +
-              '<li><a href="http://localhost:5500/base.html">Página Inicial</a></li>' +
-              '<li><a href="http://localhost:5500/quem_somos">Quem somos</a></li>' +
-              '<li><a href="http://localhost:5500/apresentacoes">apresentações</a></li>' +
-              '<li><a href="">Nossos serviços</a></li>' +
-              '<li><a href="">Fale conosco</a></li>' +
+            '<a href="http://192.168.0.12:5500/base.html"><li class="nav-option">Página Inicial</li></a>' +
+            '<a href="http://192.168.0.12:5500/quem_somos"><li class="nav-option">Quem somos</li></a>' +
+            '<a href="http://192.168.0.12:5500/apresentacoes"><li class="nav-option">apresentações</li></a>' +
+            '<a href="http://192.168.0.12:5500/servicos"><li class="nav-option">Nossos serviços</li></a>' +
+            '<a href="http://192.168.0.12:5500/contato"><li class="nav-option">Fale conosco</li></a>' +
           '</ul>' +
       '</div>' +
     '</div>'
