@@ -1,0 +1,115 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+  
+
+.welcome-menu-dropdown
+{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+.dropdown-btn {
+    padding: 8px 12px;
+    font-size: 17px;
+    color: white;
+    background-color:  rgba(255,202, 66, .5);
+    border: 2px solid rgba(255,202, 66, 1);
+    cursor: pointer;
+    border-radius:6px;
+}
+
+.dropdown-btn:hover {
+    background-color:  rgba(255,202, 66, .8);
+}
+
+.dropdown-btn:focus {
+  outline: none;
+} 
+
+.dropdown-content {
+    display:none;
+    position:absolute;
+    right:0;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown-content a:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dropdown-content a:nth-child(3){
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-content a {
+  padding: 20px 40px;
+  font-size:20px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  background-color:  rgba(255,202, 66, .5);
+  
+}
+.dropdown-content a:hover{
+  background-color:  rgba(255,202, 66, .8);
+}
+
+.dropdown-show
+{
+    display: block;
+}
+
+.welcome-buttons-wrapper {
+    position: fixed;
+    bottom: 15%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:0;
+    margin:0;
+}
+  
+
+.welcome-button{
+    background-color:  rgba(255,202, 66, .5);
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16);
+    border: 2px solid  rgba(255,202, 66, 1);;
+    color: white;
+    padding: 24px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 32px;
+    margin: 4px 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 250px;
+    max-width: 80vw;
+}
+
+.welcome-button p{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Staatliches', cursive;
+    opacity: 100%;
+}
+
+.welcome-button:hover{
+    background-color:  rgba(255,202, 66, .8);
+}
+
