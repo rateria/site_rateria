@@ -62,32 +62,41 @@ a:hover{
     color: #FFC90B;
 }
 
-@media screen and (max-width: 1500px){
-    #container .coluna{
-        margin: 33px 0px 10px 90px;
-    }
+@media screen and (max-width: 1006px){
     #container .coluna:nth-child(2){
-        margin: 33px 23px 10px 45px;
+        display: none;
+        margin: 0 0 0 0;
     }
     #container .coluna:last-child{
-        margin: 33px 90px 10px 22px;
+        margin-right: 130px;
+    }
+    #container .coluna:first-child{
+        margin-left: 130px;
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 680px){
     #container .coluna{
-        margin: 33px 30px 5px 90px;
-    }
-    #container .coluna:nth-child(2){
-        margin: 33px 90px 5px 30px;
-    }
-    #container .coluna:last-child{
+        margin: 33px 90px 5px 90px;
         flex-basis: 100%;
+        text-align: center;
+    }
+    #container .coluna:nth-child(2){
+        display: none;
+        margin: 5px 90px 5px 90px;
+        flex-basis: 100%;
+    }
+    #container .coluna:last-child{
         margin: 5px 90px 10px;
+        flex-basis: 100%;
+    }
+    #lista{
+        text-align: center;
+        text-indent: -20px;
     }
 }
 
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
     #container .coluna{
         margin: 33px 90px 5px 90px;
         flex-basis: 100%;
@@ -105,8 +114,32 @@ a:hover{
         text-align: center;
         text-indent: -20px;
     }
-}
+} */
+/* @media screen and (max-width: 1500px){
+    #container .coluna{
+        margin: 33px 0px 10px 90px;
+    }
+    #container .coluna:nth-child(2){
+        margin: 33px 23px 10px 45px;
+    }
+    #container .coluna:last-child{
+        margin: 33px 90px 10px 22px;
+    }
+} */
+ 
+/* @media screen and (max-width: 1000px){
+    #container .coluna{
+        margin: 33px 30px 5px 90px;
+    }
+    #container .coluna:nth-child(2){
+        display: none;
+    }
+    #container .coluna:last-child{
+        margin: 33px 90px 5px 30px;
+    }
+} */
+
 /* Tasks:
-Deixar responsivo usando a feature do chrome - https://www.youtube.com/watch?v=CaNqFe9amRA / https://www.w3schools.com/css/css3_flexbox_responsive.asp
-Testar com o logo da rateria em cima (Horrível, tirei)
-Consertei bug de fonte nos contatos (Check)*/
+Responsividade: https://www.youtube.com/watch?v=H91DhKPjhPk
+Retirando elementos com a responsividade
+Usar a unidade de medida rem (relativa ao geral)*/
