@@ -55,7 +55,6 @@ function toggleNavMenu() {
 
 function buildHeader() {
   return (
-    '<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"/>' +
     '<link rel="stylesheet" type="text/css" href="/css/header.css"/>' +
     '<div id="hbase"></div>' +
     '<div id="h">' +
