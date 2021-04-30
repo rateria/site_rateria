@@ -80,6 +80,7 @@
 
 .scrolled #h-content {
     grid-template-columns: auto auto auto;
+    margin-top: 13px;
     margin-left: 8%;
 }
 
