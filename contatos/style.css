@@ -1,7 +1,7 @@
 @import "../css/theme.css";
 
 #section-title {
-    height: 20rem;
+    height: 20rem !important;
     opacity: 70%;
 }
 
@@ -16,8 +16,8 @@ main {
     width: 80%;
 }
 
-h1 {
-    font-size: 6rem;
+h1#contact-title {
+    font-size: 6rem !important;
     margin: 0px;
     margin-top: -5rem;
     margin-left: 50vw;

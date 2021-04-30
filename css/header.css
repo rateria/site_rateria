@@ -1,5 +1,10 @@
 @import "theme.css";
 
+#hbase{
+    background-color: transparent;
+    height: 180px;
+}
+
 #h {
     background-color: var(--color-primary);
     height: 180px;
@@ -9,6 +14,7 @@
     top: 0px;
     width: 100%;
 }
+
 #h-content {
     align-items: center;
     color: var(--color-nav);
@@ -21,18 +27,20 @@
     text-align: center;
     width: 80%;
 }
+
 #logo {
     width: 250px;
 }
+
 #h-title {
     display: none;
     font-size: 50px;
     text-align: left;
 }
+
 #nav {
     align-items: center;
     display: inline-grid;
-    font-size: 25px;
     grid-column-gap: 20px;
     grid-template-columns: auto auto auto auto auto;
     list-style-type: none;
@@ -42,6 +50,7 @@
     text-transform: uppercase;
     width: 100%;
 }
+
 #nav-button {
     background-color: var(--color-primary);
     background-image: url("/images/nav_menu.png");
@@ -50,10 +59,13 @@
     height: 60px;
     width: 60px;
 }
+
 #nav > a {
     color: var(--color-nav);
+    font-size: 2.5rem;
     text-decoration: none;
 }
+
 #nav > a:hover {
     color: var(--color-white);
 }
@@ -61,13 +73,20 @@
 #h.scrolled {
     height: 120px;
 }
+
+#hbase.scrolled {
+    height: 120px;
+}
+
 .scrolled #h-content {
     grid-template-columns: auto auto auto;
     margin-left: 8%;
 }
+
 .scrolled #h-title {
     display: initial;
 }
+
 .scrolled #logo {
     width: 100px;
 }
