@@ -34,10 +34,15 @@ for (i = 0; i < dropdown.length; i++) {
 window.onscroll = function() {
   var winScroll = document.documentElement.scrollTop;
   const headerContent = document.getElementById("h");
-  if (winScroll != 0)
+  const headerBase = document.getElementById("hbase");
+  if (winScroll != 0) {
     headerContent.classList.add("scrolled");
-  else
+    headerBase.classList.add("scrolled");
+  }
+  else {
     headerContent.classList.remove("scrolled");
+    headerBase.classList.remove("scrolled");
+  }
 }
 
 function toggleNavMenu() {
@@ -52,6 +57,7 @@ function buildHeader() {
   return (
     '<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"/>' +
     '<link rel="stylesheet" type="text/css" href="/css/header.css"/>' +
+    '<div id="hbase"></div>' +
     '<div id="h">' +
       '<div id="h-content">' +
           '<a href="http://' + domain + '/"><img id="logo" src="/images/logo-fundo-azul.svg"/></a>' +
