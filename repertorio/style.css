@@ -18,36 +18,38 @@ main {
     margin: 20px 0px;
 }
 
-/*#box-bga {
-    border: 10px solid var(--color-nav);
-    border-radius: 5px;
-    object-fit: cover;
-    opacity: 0.5;
-    margin: auto;
-    width: 70%;
-}*/
-
-#music-box {
-    align-content: stretch;
-    background-color: var(--color-primary);
+#box-bg {
     background-image: url("/contato/rateria_olho_de_peixe.jpg");
-    border: 8px solid var(--color-nav);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    border-radius: 15px;
     margin: auto;
-    max-height: 780px;
-    overflow-y: scroll;
+    height: 740px;
+    object-fit: fill;
+    padding: 0;
     width: 70%;
 }
 
+#music-box {
+    align-content: stretch;
+    background-color: rgb(23, 125, 220, 0.5);
+    border: 5px solid rgba(255, 189, 22, 1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 740px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
 .music-item {
-    background-color: black;
+    background-color: var(--color-black);
     border-radius: 20px;
+    cursor: pointer;
     height: 200px;
-    margin: 20px;
+    margin: 15px;
     text-align: center;
     width: 200px;
 }
@@ -58,9 +60,9 @@ main {
 }
 
 .even {
-    color: var(--color-nav);
+    color: rgba(255, 189, 22, 1);
 }
 
 .odd {
-    color: var(--color-primary);
+    color: rgba(23, 125, 220, 0.712);
 }
