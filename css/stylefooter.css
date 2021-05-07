@@ -7,7 +7,7 @@ body{
 }
 footer{
     background-color: #041E7A;
-    width: auto;
+    width: 100%;
     height: auto;
     position: absolute;
     bottom: 0px;
@@ -42,7 +42,11 @@ hr{
     list-style-type: none;
     text-align: left;
     line-height: normal;
-    text-indent: -10px;
+    text-align: center;
+    /* text-indent: -10px; */
+}
+ul{
+    padding: 0;
 }
 .titulo-coluna{
     font-family: Staatliches;
@@ -81,6 +85,10 @@ a:hover{
         flex-basis: 100%;
         text-align: center;
     }
+    #container .coluna:first-child{
+        text-indent: 0;
+        text-align: center
+    }
     #container .coluna:nth-child(2){
         display: none;
         margin: 5px 90px 5px 90px;
@@ -92,8 +100,10 @@ a:hover{
     }
     #lista{
         text-align: center;
-        text-indent: -20px;
+        /* text-indent: -45px; */
     }
 }
 
-/* Usar a unidade de medida rem (relativa ao geral)*/ 
+/*
+Centralzar o contatos na última media querie 
+Usar a unidade de medida rem (relativa ao geral)*/ 
