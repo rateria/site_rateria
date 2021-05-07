@@ -13,3 +13,54 @@ main {
 
     height: fit-content;
 }
+
+#content p {
+    margin: 20px 0px;
+}
+
+/*#box-bga {
+    border: 10px solid var(--color-nav);
+    border-radius: 5px;
+    object-fit: cover;
+    opacity: 0.5;
+    margin: auto;
+    width: 70%;
+}*/
+
+#music-box {
+    align-content: stretch;
+    background-color: var(--color-primary);
+    background-image: url("/contato/rateria_olho_de_peixe.jpg");
+    border: 8px solid var(--color-nav);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-height: 780px;
+    overflow-y: scroll;
+    width: 70%;
+}
+
+.music-item {
+    background-color: black;
+    border-radius: 20px;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.music-item h1{
+    font-size: 3rem;
+    margin-top: 80px;
+}
+
+.even {
+    color: var(--color-nav);
+}
+
+.odd {
+    color: var(--color-primary);
+}
