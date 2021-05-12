@@ -79,6 +79,15 @@ main {
     margin-top: 8.5rem;
 }
 
+audio {
+    width: 180px;
+    display: none;
+}
+
+.show-audio audio {
+    display: initial;
+}
+
 .even {
     color: rgba(255, 189, 22, 1);
 }
