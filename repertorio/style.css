@@ -28,10 +28,32 @@ main {
     width: 70%;
 }
 
+
+#music-box::-webkit-scrollbar {
+  width: 3px;
+  height: 25px;
+}
+
+#music-box::-webkit-scrollbar-button {
+  width: 3px;
+  height: 1.5px;
+}
+
+#music-box::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+}
+
+#music-box::-webkit-scrollbar-track {
+    background: rgba(255, 189, 22, 1);
+    border-radius: 25px;
+}
+
 #music-box {
     align-content: stretch;
     background-color: rgb(23, 125, 220, 0.5);
-    border: 5px solid rgba(255, 189, 22, 1);
+    border: 6px solid rgba(255, 189, 22, 1);
+    border-right-width: 3px;
     border-radius: 15px;
     display: flex;
     flex-direction: row;
