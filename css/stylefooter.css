@@ -27,6 +27,9 @@ hr{
     width: 100%;
     color: white;
 }
+.visivel-celular{
+    display: none;
+}
 .coluna{
     flex: 1;
     margin: 33px 90px 10px 90px;
@@ -36,14 +39,11 @@ hr{
     font-size: 18px;
     line-height: 21.46px;
     color: #FFF9C0;
-    /* background-color: aquamarine;     */
 }
-#lista{
+.lista{
     list-style-type: none;
     text-align: left;
     line-height: normal;
-    text-align: center;
-    /* text-indent: -10px; */
 }
 ul{
     padding: 0;
@@ -79,31 +79,30 @@ a:hover{
     }
 }
 
+@media screen and (max-width: 750px){
+    .visivel-celular{
+        display: inline;
+    }
+    .visivel-desktop{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 680px){
     #container .coluna{
-        margin: 33px 90px 5px 90px;
+        margin: 33px 90px 5px;
         flex-basis: 100%;
         text-align: center;
     }
     #container .coluna:first-child{
-        text-indent: 0;
-        text-align: center
-    }
-    #container .coluna:nth-child(2){
-        display: none;
-        margin: 5px 90px 5px 90px;
-        flex-basis: 100%;
+        text-align: center;
+        margin-left: 90px;
     }
     #container .coluna:last-child{
-        margin: 5px 90px 10px;
+        margin: 5px 90px 10px 90px;
         flex-basis: 100%;
     }
-    #lista{
+    .lista{
         text-align: center;
-        /* text-indent: -45px; */
     }
 }
-
-/*
-Centralzar o contatos na última media querie 
-Usar a unidade de medida rem (relativa ao geral)*/ 
