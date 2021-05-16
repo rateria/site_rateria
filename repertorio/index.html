@@ -18,71 +18,36 @@
                 <h1>Repertório</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin erat vel lobortis pretium. Pellentesque eget dui dolor. Quisque vitae diam at nibh sollicitudin vestibulum nec at felis. Nulla pharetra, diam consectetur congue feugiat, purus tellus faucibus dolor, eget vestibulum leo metus sit amet purus. Proin aliquam scelerisque posuere. Suspendisse sit amet eros non odio congue pharetra. Pellentesque id felis tortor. Sed vitae commodo purus. Quisque sagittis neque et quam placerat vestibulum. Vestibulum nec purus tristique, auctor orci non, aliquet odio. Morbi sed sollicitudin mauris. Etiam tristique, lectus sed volutpat pretium, ipsum augue venenatis nisi, suscipit dapibus mi orci vel nisl. Aenean quis odio nec metus eleifend finibus nec vitae urna. Nunc tincidunt velit neque, eu venenatis nisl pharetra ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                 <div id="box-bg">
-                <div id="music-box">
-                    <div onclick="showAudioPlayer(this)" class="music-item odd">
-                        <h1>Bhangra</h1>
-                        <audio controls="controls" src="audio/Bhangra.mp3"></audio>
-                    </div>
-                    <div onclick="showAudioPlayer(this)" class="music-item even">
-                        <h1>Nome da música</h1>
-                        <audio controls="controls" src="audio/Debussy - Clair de Lune.mp3"></audio>
-                    </div>
-                    <div onclick="showAudioPlayer(this)" class="music-item odd">
-                        <h1>Nome da música</h1>
-                        <audio controls="controls" src="audio/Demônios da Garoa - Saudosa Maloca.mp3"></audio>
-                    </div>
-                    <div onclick="showAudioPlayer(this)" class="music-item even">
-                        <h1>Nome da música</h1>
-                        <audio controls="controls" src="audio/Maurice Ravel - Bolero.mp3"></audio>
-                    </div>
-                    <div onclick="showAudioPlayer(this)" class="music-item odd">
-                        <h1>Nome da música</h1>
-                        <audio controls="controls" src="audio/Nightwish - Ghost River.mp3"></audio>
-                    </div>
-                    <div onclick="showAudioPlayer(this)" class="music-item even">
-                        <h1>Nome da música</h1>
-                        <audio controls="controls" src="audio/Salgueiro_2019.mp3"></audio>
-                    </div>
-                    <div onclick="showAudioPlayer(this)" class="music-item odd">
-                        <h1>Nome da música</h1>
-                        <audio controls="controls" src="audio/Epica - Cry for the moon.mp3"></audio>
-                    </div>
-                    <div onclick="showAudioPlayer(this)" class="music-item even">
-                        <h1>Nome da música</h1>
-                        <audio controls="controls" src="audio/Portela_2019.mp3"></audio>
-                    </div>
-                    <div onclick="showAudioPlayer(this)" class="music-item odd">
-                        <h1>Nome da música</h1>
-                        <audio controls="controls" src="audio/Within Temptation - Sinéad.mp3"></audio>
-                    </div>
-                    <div onclick="showAudioPlayer(this)" class="music-item odd">
-                        <h1>Nome da música</h1>
-                        <audio controls="controls" src="audio/Heitor Villa-Lobos - Bachianas Brasileiras Nº 1.mp3"></audio>
+                    <div id="music-box">
+                        <audio-player data-src="audio/Bhangra.mp3" song-name="Bhangra" text-color="yellow" bg-image="/images/bhangra.jpg"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
                     </div>
                 </div>
             </div>
-            </div>
         </main>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="../js/scripts.js"></script>
         <script>
-            function hideMusicAudios() {
-                const audioList = document.getElementsByClassName('music-item');
-
-                if (audioList.length == 0)
-                    return;
-
-                for (const musicItem of audioList)
-                    musicItem.classList.remove("show-audio");
-            }
-            function showAudioPlayer(musicItem) {
-                if (musicItem.classList.contains("show-audio")) {
-                    musicItem.classList.remove("show-audio");
-                }
-                else {
-                    hideMusicAudios();
-                    musicItem.classList.add("show-audio");
-                }
-            }
+            $.get("/repertorio/player/player.html", function (data) {
+                $('body').append(data);
+            });
         </script>
     </body>
+
+    
 </html>

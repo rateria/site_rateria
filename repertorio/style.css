@@ -62,36 +62,3 @@ main {
     overflow-y: scroll;
     width: 100%;
 }
-
-.music-item {
-    background-color: var(--color-black);
-    border-radius: 20px;
-    cursor: pointer;
-    height: 20rem;
-    margin: 15px;
-    text-align: center;
-    width: 20rem;
-}
-
-.music-item h1{
-    font-size: 3rem;
-    margin-top: 80px;
-    margin-top: 8.5rem;
-}
-
-audio {
-    width: 180px;
-    display: none;
-}
-
-.show-audio audio {
-    display: initial;
-}
-
-.even {
-    color: rgba(255, 189, 22, 1);
-}
-
-.odd {
-    color: rgba(23, 125, 220, 0.712);
-}
