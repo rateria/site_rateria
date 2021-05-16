@@ -18,6 +18,7 @@ class AudioPlayer extends HTMLElement {
 const everything = function(element) {
     const shadow = element.shadowRoot;
 
+    // Propriedades do template
     const player = shadow.getElementById('audio-player');
     const audio = shadow.querySelector('audio');
     const playButton = shadow.getElementById('play-icon');
@@ -26,12 +27,18 @@ const everything = function(element) {
     const currentTime = shadow.getElementById('current-time');
     const muteButton = shadow.getElementById('mute-button');
     const volumeSlider = shadow.getElementById('volume-slider');
+    const songName = shadow.getElementById('song-name');
 
+    // Variáveis globais do template
     let playing = false;
     let muted = false;
     let rAF = null;
 
+    // Atributos do marcador audio-player
     audio.src = element.getAttribute('data-src');
+    const name = element.getAttribute('song-name');
+    const textColor = element.getAttribute('text-color');
+    const bgImage = element.getAttribute('bg-image');
 
     const calculateTime = (secs) => {
         const minutes = Math.floor(secs / 60);
@@ -42,15 +49,12 @@ const everything = function(element) {
 
     const initPlayer = () => {
         displayDuration();
-        setSliderMax();
+        seekSlider.max = Math.floor(audio.duration);
+        volumeSlider.value = Math.floor(audio.volume * 100);
     }
 
     const displayDuration = () => {
         duration.textContent =  calculateTime(audio.duration);
-    }
-
-    const setSliderMax = () => {
-        seekSlider.max = Math.floor(audio.duration);
     }
 
     const whilePlaying = () => {
@@ -87,7 +91,8 @@ const everything = function(element) {
         volumeSlider.value = audio.volume * 100;
     }
 
-    
+
+    // Escuta de eventos
 
     seekSlider.addEventListener('input', () => {
         currentTime.textContent = calculateTime(seekSlider.value);
@@ -108,6 +113,8 @@ const everything = function(element) {
         audio.volume = value / 100;
         if (muted && value != 0)
             unmuteAudio();
+        else if (!muted && value == 0)
+            muteAudio();
     });
 
     muteButton.addEventListener('click', () => {
@@ -124,6 +131,9 @@ const everything = function(element) {
             playAudio();
     });
 
+
+    // Executado na inicialização do componente
+
     if (audio.readyState > 0) {
         initPlayer();
     }
@@ -132,6 +142,9 @@ const everything = function(element) {
             initPlayer();
         });
     }
+    songName.textContent = (name)? name : "Nome da Música";
+    songName.classList.add(textColor);
+    player.style.backgroundImage = "url('" + bgImage + "')";
 }
 
 customElements.define('audio-player', AudioPlayer);

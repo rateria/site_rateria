@@ -1,5 +1,7 @@
 #audio-player {
-    background-color: #000000;
+    background-color: rgb(0, 0, 0);
+    background-size: 20rem 20rem;
+    background-repeat: no-repeat;
     border-radius: 20px;
     cursor: pointer;
     height: 20rem;
@@ -7,38 +9,85 @@
     text-align: center;
     width: 20rem;
 }
-#play-icon {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: 10rem 10rem;
-    border-color: transparent;
-    cursor: pointer;
-    height: 10rem;
-    width: 10rem;
-    /*margin: 4.5rem 4.6rem;*/
+
+#song-name {
+    color: rgb(255, 255, 255);
+    font-family: 'Staatliches', cursive;
+    font-size: 3rem;
     position: relative;
-    top: 1rem;
-    left: 1rem;
-}
-#play-icon {
-    background-image: url("./play.png");
-}
-.playing #play-icon {
-    background-image: url("./pause.png");
+    top: 8rem;
 }
 
-#current-time, #duration {
-    color: #FFFFFF;
+#song-name.yellow {
+    color: rgba(255, 189, 22, 1);
 }
+
+#song-name.blue {
+    color: rgba(23, 125, 220, 0.712);
+}
+
+#audio-controls {
+    display: none;
+    position: relative;
+    top: -5.5rem;
+}
+
+#audio-player:hover  #audio-controls {
+    display: initial;
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
+
 #mute-button {
     background-color: transparent;
     background-image: url("./volume.png");
     background-repeat: no-repeat;
     background-size: 3rem 3rem;
     border-color: transparent;
+    cursor: pointer;
     height: 3rem;
     width: 3rem;
 }
+
 .muted #mute-button {
     background-image: url("./mute.png");
 }
+
+#volume-slider {
+    position: relative;
+    top: -7px;
+}
+
+#play-icon {
+    background-color: transparent;
+    background-image: url("./play.png");
+    background-repeat: no-repeat;
+    background-size: 10rem 10rem;
+    border-color: transparent;
+    cursor: pointer;
+    height: 10rem;
+    width: 10rem;
+    margin: 1.8rem;
+}
+
+.playing #play-icon {
+    background-image: url("./pause.png");
+}
+
+#current-time, #duration {
+    color: rgb(255, 255, 255);
+    font-family: 'Staatliches', cursive;
+    font-size: 1.2rem;
+}
+
+#seek-slider {
+    position: relative;
+    top: -2px;
+}
+
+input[type="range"] {
+    height: 5px;
+}
+

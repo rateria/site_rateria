@@ -1,15 +1,20 @@
 <template>
     <link rel="stylesheet" type="text/css" href="/repertorio/player//player.css"/>
     <div id="audio-player">
+        <h1 id="song-name"></h1>
         <audio preload="metadata" loop></audio>
-        <button id="play-icon"></button>
-        <br><br><br><br>
-        <span id="current-time">0:00</span>
-        <input id="seek-slider" type="range" max="100" value="0"/>
-        <span id="duration">0:00</span>
-        <br>
-        <button id="mute-button"></button>
-        <input id="volume-slider" type="range" max="100" value="100"/>
+        <div id="audio-controls">
+            <div id="volume">
+                <button id="mute-button"></button>
+                <input id="volume-slider" type="range" max="100" value="100"/>
+            </div>
+            <button id="play-icon"></button>
+            <div id="progression">
+                <span id="current-time">0:00</span>
+                <input id="seek-slider" type="range" max="100" value="0"/>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
     </div>
-</template>        
+</template>
 <script type="text/javascript" src="/repertorio/player/player.js"></script>
