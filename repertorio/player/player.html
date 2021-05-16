@@ -1,0 +1,15 @@
+<template>
+    <link rel="stylesheet" type="text/css" href="/repertorio/player//player.css"/>
+    <div id="audio-player">
+        <audio preload="metadata" loop></audio>
+        <button id="play-icon"></button>
+        <br><br><br><br>
+        <span id="current-time">0:00</span>
+        <input id="seek-slider" type="range" max="100" value="0"/>
+        <span id="duration">0:00</span>
+        <br>
+        <button id="mute-button"></button>
+        <input id="volume-slider" type="range" max="100" value="100"/>
+    </div>
+</template>        
+<script type="text/javascript" src="/repertorio/player/player.js"></script>
