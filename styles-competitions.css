@@ -9,38 +9,67 @@ main {
     align-items: center;
 }
 
-#inters-container {
+#competitions-container {
     max-width: 1100px;
 }
 
-#inters-content {
-    margin-top: 3.2rem;
-    height:fit-content;
-
-    background: url(images/fotoAbraco.jpg);
-    background-position: center;
-    background-size: cover;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        
+#competitions-content {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
-#inters-text {
-    width: 60%;
-    min-height: 300px;
-    padding: 2.4rem 2.4rem 3.2rem;
-
-    background: var(--color-white-transparent);
+#competitions-content>img {
+    margin-top: -2rem;
+    padding-left: 4rem;
+    height: 80rem;
+    object-fit: cover;
+    width: 35%;
 }
 
-#inters-text h2 {
+
+.competition-description {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
 
 }
 
-#inters-text p {
-    margin-top: 1.6rem;
+#linha {
+    height: 90rem;
+    width: 0.4rem;
+    background-color: violet;
+    /* margin-right: -33.5rem; */
+}
+
+.competition-description img {
+    height: 9.4rem;
+    width: 9.4rem;
+    object-fit: cover;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.circle {
+    border-radius: 999px;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 5rem;
+}
+
+.gold {
+    background-color: #EFBA00;
+}
+
+.silver {
+    background-color: #b4b0b0;
+}
+
+.bronze {
+    background-color: #B8593B;
+}
+
+.competition-description .text {
+    max-width: 30rem;
 }
 
 #video-container {
