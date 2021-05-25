@@ -91,3 +91,52 @@ input[type="range"] {
     height: 5px;
 }
 
+@media (max-width: 980px) {
+    #audio-player {
+        background-size: 40rem 40rem;
+        border-radius: 40px;
+        height: 40rem;
+        margin: 30px;
+        width: 40rem;
+    }
+
+    #song-name {
+        font-size: 6rem;
+        top: 16rem;
+    }
+
+    #audio-controls {
+        top: -11rem;
+    }
+
+    #mute-button {
+        background-size: 6rem 6rem;
+        height: 6rem;
+        width: 6rem;
+    }
+
+    #volume-slider {
+        position: relative;
+        top: -14px;
+    }
+
+    #play-icon {
+        background-size: 20rem 20rem;
+        height: 20rem;
+        width: 20rem;
+        margin: 3.6rem;
+    }
+
+    #current-time, #duration {
+        font-size: 2.4rem;
+    }
+
+    #seek-slider {
+        position: relative;
+        top: -4px;
+    }
+
+    input[type="range"] {
+        height: 5px;
+    }
+}

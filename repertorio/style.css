@@ -25,6 +25,12 @@ main {
     width: 70%;
 }
 
+@media (max-width: 980px) {
+    #box-bg {
+        width: 100%;
+    }
+}
+
 
 #music-box::-webkit-scrollbar {
   width: 3px;
