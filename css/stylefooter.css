@@ -1,16 +1,10 @@
 /*Figma: https://www.figma.com/file/zlBKAMwDEgOm5lTICaKbCI/Esbo%C3%A7o-para-o-site?node-id=0%3A18 */
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 footer{
     background-color: #041E7A;
     width: 100%;
     height: auto;
-    position: absolute;
-    bottom: 0px;
+    margin-top: 5em;
 }
 hr{
     position: relative;
@@ -53,13 +47,14 @@ ul{
     font-size: 22px;
     line-height: 27.5px;
 }
-a{
+footer a{
     font-family: Carrois Gothic;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21,46px;
     text-decoration: none;
+    text-transform: none;
     color: #FFF9C0
 }
 a:hover{
