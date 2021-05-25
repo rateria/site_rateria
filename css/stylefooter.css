@@ -1,0 +1,108 @@
+/*Figma: https://www.figma.com/file/zlBKAMwDEgOm5lTICaKbCI/Esbo%C3%A7o-para-o-site?node-id=0%3A18 */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #041E7A;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+}
+hr{
+    position: relative;
+    top: 28px;
+    width: auto;
+    height: 13px;
+    background-color: #FFC90B;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+}
+.visivel-celular{
+    display: none;
+}
+.coluna{
+    flex: 1;
+    margin: 33px 90px 10px 90px;
+    font-family: Carrois Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21.46px;
+    color: #FFF9C0;
+}
+.lista{
+    list-style-type: none;
+    text-align: left;
+    line-height: normal;
+}
+ul{
+    padding: 0;
+}
+.titulo-coluna{
+    font-family: Staatliches;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+a{
+    font-family: Carrois Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21,46px;
+    text-decoration: none;
+    color: #FFF9C0
+}
+a:hover{
+    color: #FFC90B;
+}
+
+@media screen and (max-width: 1006px){
+    #container .coluna:nth-child(2){
+        display: none;
+        margin: 0 0 0 0;
+    }
+    #container .coluna:last-child{
+        margin-right: 130px;
+    }
+    #container .coluna:first-child{
+        margin-left: 130px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .visivel-celular{
+        display: inline;
+    }
+    .visivel-desktop{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px){
+    #container .coluna{
+        margin: 33px 90px 5px;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    #container .coluna:first-child{
+        text-align: center;
+        margin-left: 90px;
+    }
+    #container .coluna:last-child{
+        margin: 5px 90px 10px 90px;
+        flex-basis: 100%;
+    }
+    .lista{
+        text-align: center;
+    }
+}
