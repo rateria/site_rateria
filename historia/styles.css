@@ -1,0 +1,111 @@
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    width: 70%;
+    max-width: 1100px;
+    height: 500px;
+
+}
+
+#text h1 {
+    margin-bottom: 3.2rem;
+
+}
+.container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: "image1 image1 text1"
+                        "text2 image2 image2";
+    grid-template-columns: 45% auto 45%;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+}
+.image1 {
+    grid-area:image1;
+    position: relative;
+    top: -1.5rem;
+    overflow: hidden;
+    background: url("./images/70490122_1364677383696705_246511344466001920_o 1.png");
+    background-position: center;
+    background-size: cover;
+   
+}
+.image2 {
+    grid-area:image2;
+    display: flex;
+    align-items: center;
+    overflow:hidden;
+    background: url("./images/70490122_1364677383696705_246511344466001920_o 1.png");
+    background-position: center;
+    background-size: cover;
+}
+.text1 {
+    grid-area:text1;
+    position: relative;
+    top: -6.4rem;
+}
+.text2 {
+    grid-area:text2;
+}
+
+img {
+    height: 100%;
+}
+
+
+.line {
+    height: 0.6rem;
+    background-color: var(--color-primary-light);
+    opacity: 70%;
+    position: relative;
+    top: 2.8rem;
+    z-index: -1;
+    width: 120%;
+    left: calc(-1*(100vw - 100%/0.45)/2)
+}
+
+@media (max-width: 1200px) {
+    .container {
+        grid-template-areas: "text1"
+                        "image1"
+                        "text2";
+        grid-template-columns: 100%;
+        grid-row-gap: 1rem;
+    }
+    .image1{
+        display: block;
+        border: solid 1px;
+        height: 70vh;
+    }
+    .image2 {
+        display:none;
+    }
+    .line{
+        left: calc(-1*(100vw - 100%)/2);
+        width: 70%;
+    }
+}
+@media (max-width: 1000px) {
+    #content {
+        width: 80%;
+    }
+    .line{
+        left: calc(-1*(100vw - 100%)/2);
+        width: 72%;
+}
+}
+
+@media (max-width: 600px) {
+    #content {
+        width: 90%;
+    }
+    .line{
+        left: calc(-1*(100vw - 100%)/2);
+        width: 60%;
+}
+}
