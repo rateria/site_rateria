@@ -70,7 +70,7 @@ function buildHeader() {
             '<a href="http://' + domain + '/"><li class="nav-option">Página Inicial</li></a>' +
             '<a href="http://' + domain + '/historia"><li class="nav-option">Quem somos</li></a>' +
             '<a href="http://' + domain + '/apresentacoes"><li class="nav-option">apresentações</li></a>' +
-            '<a href="http://' + domain + '/servicos"><li class="nav-option">Nossos serviços</li></a>' +
+            '<a href="http://' + domain + '/repertorio"><li class="nav-option">Repertório</li></a>' +
             '<a href="http://' + domain + '/contato"><li class="nav-option">Fale conosco</li></a>' +
           '</ul>' +
       '</div>' +

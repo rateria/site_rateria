@@ -1,7 +1,7 @@
 /*Figma: https://www.figma.com/file/zlBKAMwDEgOm5lTICaKbCI/Esbo%C3%A7o-para-o-site?node-id=0%3A18 */
 
 footer{
-    background-color: #041E7A;
+    background-color: var(--color-primary);
     width: 100%;
     height: auto;
     margin-top: 5em;
