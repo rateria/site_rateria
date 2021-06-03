@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>Repertório</title>
+    </head>
+    <body>
+        <header id="header"></header>
+
+        <div id="section-title">
+            <div class="title-line"></div>
+        </div>
+
+        <main>
+            <div id="content">
+                <h1>Repertório</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin erat vel lobortis pretium. Pellentesque eget dui dolor. Quisque vitae diam at nibh sollicitudin vestibulum nec at felis. Nulla pharetra, diam consectetur congue feugiat, purus tellus faucibus dolor, eget vestibulum leo metus sit amet purus. Proin aliquam scelerisque posuere. Suspendisse sit amet eros non odio congue pharetra. Pellentesque id felis tortor. Sed vitae commodo purus. Quisque sagittis neque et quam placerat vestibulum. Vestibulum nec purus tristique, auctor orci non, aliquet odio. Morbi sed sollicitudin mauris. Etiam tristique, lectus sed volutpat pretium, ipsum augue venenatis nisi, suscipit dapibus mi orci vel nisl. Aenean quis odio nec metus eleifend finibus nec vitae urna. Nunc tincidunt velit neque, eu venenatis nisl pharetra ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <div id="box-bg">
+                    <div id="music-box">
+                        <audio-player data-src="audio/Bhangra.mp3" song-name="Bhangra" text-color="yellow" bg-image="/images/bhangra.jpg"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                        <audio-player data-src="" text-color="blue"></audio-player>
+                        <audio-player data-src="" text-color="yellow"></audio-player>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/scripts.js"></script>
+        <script>
+            $.get("/repertorio/player/player.html", function (data) {
+                $('body').append(data);
+            });
+        </script>
+    </body>
+
+    
+</html>
