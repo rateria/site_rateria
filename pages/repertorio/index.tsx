@@ -32,30 +32,6 @@ export default function Repertory() {
 									faixas na lista a seguir e descobrir um pouco melhor do que
 									nós somos capazes!
 								</p>
-								<div className={styles.contact}>
-									<div className={styles.infoText}>
-										<p className={styles.name}>Pedro Passarini</p>
-										<p className={styles.occupation}>Mestre</p>
-									</div>
-									<div>
-										<SocialIcon
-											url="https://api.whatsapp.com/send?phone=5511999106883&text=Olá!%20Vim%20pelo%20site!"
-											label="WhatsApp"
-											className={styles.socialIcon}
-											fgColor="#FFF5DA"
-											target="_blank"
-											style={{ height: 40, width: 40, marginRight: 10 }}
-										/>
-										<SocialIcon
-											url="mailto:rateria@gmail.com"
-											label="WhatsApp"
-											className={styles.socialIcon}
-											fgColor="#FFF5DA"
-											target="_blank"
-											style={{ height: 40, width: 40, marginRight: 10 }}
-										/>
-									</div>
-								</div>
 							</div>
 							<iframe
 								src="https://open.spotify.com/embed/playlist/1RlGciZaSsb1peK00fskil"
