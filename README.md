@@ -24,7 +24,7 @@ Aplicação web feita em NextJS por ritmistas da Rateria, bateria da Escola Poli
 Para visualizar a aplicação em sua máquina, basta executar, com o yarn instalado em sua máquina:
 
 ```bash
-yarn insatall
+yarn install
 yarn dev
 ```
 
@@ -37,6 +37,20 @@ yarn build
 ```
 
 E está hospedada no serviço Hostinger e pode ser visualizada na pasta './out' do repositório.
+
+Dependendo da configuração do seu ambiente, algum dos comandos acima pode falhar com o erro:
+
+```js
+opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+library: 'digital envelope routines',
+reason: 'unsupported',
+code: 'ERR_OSSL_EVP_UNSUPPORTED'
+```
+Neste caso, reexecute o comando modificando as opções para o Node:
+
+```bash
+NODE_OPTIONS=--openssl-legacy-provider yarn dev
+```
 
 ## Edição
 
