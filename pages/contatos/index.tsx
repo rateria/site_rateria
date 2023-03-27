@@ -26,12 +26,12 @@ export default function Contacts() {
 							<div className={styles.info}>
 								<div className={styles.contact}>
 									<div className={styles.infoText}>
-										<p className={styles.name}>Matheus Rosa Claro</p>
+										<p className={styles.name}>Khad Baloch</p>
 										<p className={styles.occupation}>Presidente</p>
 									</div>
 									<div>
 										<SocialIcon
-											url="https://api.whatsapp.com/send?phone=553598679613&text=Olá!%20Vim%20pelo%20site!"
+											url="https://api.whatsapp.com/send?phone=5511984510994&text=Olá!%20Vim%20pelo%20site!"
 											label="WhatsApp"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
@@ -39,7 +39,7 @@ export default function Contacts() {
 											style={{ height: 40, width: 40, marginRight: 10 }}
 										/>
 										<SocialIcon
-											url="mailto:matheusrclaro@usp.br"
+											url="mailto:rateria@gmail.com"
 											label="Email"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
@@ -62,33 +62,17 @@ export default function Contacts() {
 											target="_blank"
 											style={{ height: 40, width: 40, marginRight: 10 }}
 										/>
-										<SocialIcon
-											url="mailto:danicardoso255@usp.br"
-											label="Email"
-											className={styles.socialIcon}
-											fgColor="#FFF5DA"
-											target="_blank"
-											style={{ height: 40, width: 40, marginRight: 10 }}
-										/>
 									</div>
 								</div>
 								<div className={styles.contact}>
 									<div className={styles.infoText}>
-										<p className={styles.name}>André Christóforo</p>
+										<p className={styles.name}>Bruno Sandri</p>
 										<p className={styles.occupation}>Mestre</p>
 									</div>
 									<div>
 										<SocialIcon
-											url="https://api.whatsapp.com/send?phone=5511972402040&text=Ol%C3%A1!%20Vim%20pelo%20site!"
+											url="https://api.whatsapp.com/send?phone=5514996073512&text=Ol%C3%A1!%20Vim%20pelo%20site!"
 											label="WhatsApp"
-											className={styles.socialIcon}
-											fgColor="#FFF5DA"
-											target="_blank"
-											style={{ height: 40, width: 40, marginRight: 10 }}
-										/>
-										<SocialIcon
-											url="mailto:andrechristoforo@hotmail.com"
-											label="Email"
 											className={styles.socialIcon}
 											fgColor="#FFF5DA"
 											target="_blank"

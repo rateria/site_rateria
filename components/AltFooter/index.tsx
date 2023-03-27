@@ -12,8 +12,15 @@ function NewFooter() {
 		<div className={styles.wrapper}>
 			<div className={styles.socialIcons}>
 				<SocialIcon
-					url="https://api.whatsapp.com/send?phone=5511995931099&text=Olá!%20Vim%20pelo%20site!"
+					url="https://api.whatsapp.com/send?phone=5511977854978&text=Olá!%20Vim%20pelo%20site!"
 					label="WhatsApp"
+					className={styles.socialIcon}
+					fgColor="#FFF5DA"
+					target="_blank"
+				/>
+				<SocialIcon
+					url="mailto:rateria@gmail.com"
+					label="Email"
 					className={styles.socialIcon}
 					fgColor="#FFF5DA"
 					target="_blank"
