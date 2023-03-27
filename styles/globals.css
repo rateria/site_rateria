@@ -1,0 +1,105 @@
+@import './scrollbar.css';
+@import './sandwichMenu.css';
+@import './videoCarousel.css';
+
+:root {
+	font-size: 62.5%;
+
+	--color-bg: #ffebb7;
+	--color-bg-light: #fff5da;
+
+	--color-primary: #041e7a;
+	--color-primary-light: #8fbadb;
+	--color-primary-light-hover: #94b2c9;
+
+	--color-secondary: #ffc90b;
+
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-white-transparent: #ffffffaa;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color: var(--color-bg);
+
+	scroll-behavior: smooth;
+}
+
+:target {
+	display: block;
+	position: relative;
+	top: -130px;
+	visibility: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: Staatliches;
+}
+
+h1 {
+	font-size: 4.8rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+p {
+	font-size: 1.6rem;
+	text-align: justify;
+	line-height: 150%;
+	text-indent: 15px;
+}
+
+p,
+a {
+	font-family: 'Carrois Gothic', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	font-family: Staatliches;
+}
+
+button {
+	font-family: 'Staatliches', cursive;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.footerSocialIcons {
+	color: var(--color-bg);
+	width: 32px;
+}
+
+.footerSocialIcons:hover {
+	filter: brightness(70%);
+}
+
+@media (max-width: 768px) {
+	:root {
+		font-size: 57%;
+	}
+}
+
+@media (max-width: 425px) {
+	:root {
+		font-size: 52%;
+	}
+}
+
+section .social-container {
+	position: relative !important;
+	padding: 0 10vw 4rem !important;
+}
