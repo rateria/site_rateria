@@ -21,6 +21,8 @@ Aplicação web feita em NextJS por ritmistas da Rateria, bateria da Escola Poli
 
 ## Deploy
 
+### Desenvolvimento
+
 Para visualizar a aplicação em sua máquina, basta executar, com o yarn instalado em sua máquina:
 
 ```bash
@@ -30,6 +32,8 @@ yarn dev
 
 E abrir o [http://localhost:3000](http://localhost:3000) em seu navegador.
 
+### Gerar site
+
 A versão final HTML estática foi gerada usando o seguinte comando:
 
 ```bash
@@ -38,7 +42,19 @@ yarn build
 
 E está hospedada no serviço Hostinger e pode ser visualizada na pasta './out' do repositório.
 
-Dependendo da configuração do seu ambiente, algum dos comandos acima pode falhar com o erro:
+### Upload no servidor
+
+Para subir os arquivos gerados para o servidor, execute o comando:
+
+```bash
+yarn deploy
+```
+
+**Atenção!** Ele funcionará somente se o arquivo com as variáveis de acesso ao servidor de hospedagem estiverem na pasta raiz do projeto.
+
+### Ambiente de desenvolvimento
+
+Dependendo da configuração do seu ambiente, algum dos comandos do yarn pode falhar com o erro:
 
 ```js
 opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
